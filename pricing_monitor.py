@@ -408,6 +408,7 @@ if run_btn:
                     })
 
             item_inserts.append({
+                "Item Code": sku,
                 "Item Name":  item_name,
                 "UOM":        uom,
                 "Rate":       new_price,
@@ -430,6 +431,7 @@ if run_btn:
 
             rule_inserts.append({
                 "ID":                    "",
+                "Item Code":             sku,
                 "Title":                 f"NON MEMBER MARGIN {sku} {uom}",
                 "Disable":               0,
                 "Apply On":              "Item Code",
